@@ -1,1 +1,1 @@
-# scot-ans.github.io
+# This is the repo for the Scottish Autonomous Networks Systems event. 
