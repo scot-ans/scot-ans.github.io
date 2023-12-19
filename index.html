@@ -1,752 +1,1264 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>SANS 2022</title>
+<html lang="en-us">
 
-        <!-- Nice Styling -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    </head>
+<head>
 
-    <body>
-        <section class="padding-top container">
-            <h1>Scottish Autonomous Networked Systems <br> 12 - 13<sup>th</sup> December 2022</h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="theme-name" content="academia-hugo"/>
 
-            <p>
-                This is the event to bring together the Scottish research community working the space of autonomous networked systems.
-
-                This event will be held both <strong>in-person</strong> and <strong>online</strong>.
-
-                The in-person meeting will be in the <a href="https://frontdoor.spa.gla.ac.uk/map/map.html#!/?to=102"><strong>level 6 'creativity suite' @ James Watt School of Engineering, University of Glasgow</strong></a>.
-
-            <!--
-                The <a href="spls-series.github.io">Scottish Programming Languages Seminar (SPLS)</a> 
-                is an informal seminar for discussing anything PL related.
-
-                This edition will be held both <strong>in-person</strong> and <strong>online</strong>.
-
-                The in-person meeting will be on <strong>Level 4, Sir Alwyn Williams Building, University of Glasgow</strong>.
-            -->
-            </p>
-
-            <p>This edition of SANS is sponsored by <a href="https://www.sicsa.ac.uk/">SICSA</a>.</p>
-
-            <img src="./sicsa_blue.jpg" alt="Scottish Informatics & Computer Science Alliance">
-        </section>
-
-        <section id="topics" class="container">
-            <h2>Topics</h2>
-
-            <p>
-                The Scottish Autonomous Networked Systems (SANS) event is an opportunity to bring together researchers from different areas to share ideas and learn about ongoing work in relation to autonomous networked systems. 
-
-                <br>
-
-                Topics can include:
-                <ul>
-                    <li>
-                        Applying novel AI & ML techniques in an innovative manner to create evolvable and autonomous compute and network infrastructure.
-                    </li>
-
-                    <li>
-                        Repurposing robotic operation techniques to distributed and federated software control to achieve runtime operational assurance.      
-                    </li>
-
-                    <li>
-                        Investigating new programming interactions between user, system, and network to achieve trust for autonomous operation.                     
-                    </li>
-
-                    <li>
-                        The use of formal methods to help achieve trustworthy operation in the face of dynamic and adaptable operational environments. 
-                    </li>
-                </ul>
-            </p>
-        
-        </section>
-
-        <section id="attending" class="container">
-            <h2>Attending</h2>
-
-            <p>
-                If you would like to attend physically, please register on the  
-                <a href="https://doodle.com/meeting/participate/id/aMQwnDOa">Doodle</a>.
-            </p>
-
-            <p>
-                There is no need to register if you would like to attend online.
-                Information on how the seminar will be streamed is coming soon.
-            </p>
-
-            <p>
-
-            </p>
-
-            <h3>COVID-19</h3>
-            <p>
-                Following Scottish Government and University guidance, we ask participants displaying potential COVID-19 symptoms not to attend physically, and encourage participants to wear masks in indoor areas should they become busy. 
-                The University supports the Distance Aware scheme, and can provide appropriate lanyards and badges.
-            </p>
-            <p>We strongly encourage participants to take a <strong>Lateral Flow Test (LFT)</strong> prior to the event; although the national testing programme has now finished, LFTs can be purchased from most major supermarkets and pharmacies.</p>
-        </section>
-
-
-
-        <section id="programme" class="container">
-            <h2>Programme</h2>
-
-            <p>
-                The following is a <i>tentative</i> schedule for this edition of SANS. 
-            </p>
-
-            <p>
-                Note that the call for talks, demos, and posters is currently open, feel free to get in touch <a href="#organisers"> here </a> to share your ongoing work.
-            </p>
-
-            <h3>Schedule</h3>
-
-            <!-- 
-                scheduling ideas
-                https://codyhouse.co/gem/schedule-template
-            -->
-
-
-            <h4> Monday 12<sup>th</sup> December </h4>
-
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="double">09:00-09:30</td>
-                        <td class="double">Welcome / Registration</td>
-                        <td class="double"></td>
-                    </tr>
-
-                    <tr class="clickable" onclick="window.location='#tum'">
-                        <th>09:30-11:00</th>
-                        <th>Academic Keynote: Network management goes 6G</th>
-                        <th>Speaker: Prof. Wolfgang Kellerer  - TUM
-                            <br>
-                            <a href="./2022-dec/presentations/2022-12-12_SANS_keynote_kellerer_print.pdf"> PRESENTATION </a>
-                        </th>
-                    </tr>
-
-                    <tr>
-                        <td class="double">11:00-11:30</td>
-                        <td class="double">Coffee</td>
-                        <td class="double"></td>
-                    </tr>
-
-<!--
-                    <tr class="clickable" onclick="window.location='#k-framework'">
-                        <td>13:00-13:30</td>
-                        <td>Bruce Collie</td>
-                        <td>The K Framework: Practical Semantic Tools from Term Rewriting</td>
-                    </tr>
-                    <tr class="clickable" onclick="window.location='#fitch-style-modal-calculi'">
-                        <td>13:30-14:00</td>
-                        <td>Nachiappan Valiappan</td>
-                        <td>Normalization for Fitch-style Modal Calculi</td>
-                    </tr>
--->
-                    <!-- Session -->
-                    <tr>
-                        <th>11:30-12:30</th>
-                        <th>Session: Short Talks</th>
-                        <!--<th>Chair: Matthew Alan Le Brun</th>-->
-                    </tr>    
-                    <tr>
-                        <td>Yusaku Kaneta - Rakuten Mobile</td>
-                        <td>Autonomous Operation in Beyond 5G Networks</td>
-                    </tr>    
-                    <tr>
-                        <td>Emma Li - Glasgow (computing)</td>
-                        <td>Trustworthy Autonomous Systems (and hub)</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/Emma Li_2022_12_12.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <!-- Lunch -->
-                     <tr>
-                        <td class="double">12:30-14:00</td>
-                        <td class="double">Lunch</td>
-                        <td class="double"></td>
-                    </tr>
-
-                    <tr>
-                        <th>14:00-15:30</th>
-                        <th>Session: Short Talks</th>
-                        <!--<th>Chair: Matthew Alan Le Brun</th>-->
-                    </tr>
-
-                    <tr>
-                        <td>Blesson Varghese - St Andrews (computing)</td>
-                        <td>Edge Machine Learning: The Opportunities for Systems Research</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/BV-StAndrews-SANS2022.pdf"> PRESENTATION </a>
-                        </td>  
-                    </tr>
-
-
-                    <tr>
-                        <td>Zihan Zheng - St Andrews (computing)</td>
-                        <td>PipeLearn: Pipeline Parallelism for Collaborative Machine Learning</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/zihan-pipelearn.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    
-                    <tr>
-                        <td>Paul Harvey - Glasgow (engineering) </td>
-                        <td>An Autonmous Blueprint: Create, Validate, Apply</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/harvey-SANS-create-validate-apply.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Patrick Krämer - TUM </td>
-                        <td>D2A: Operating a Service Function Chain Platform with Data-Driven Scheduling Policies</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/patrick -2022-12-12-scot-ans.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Paul Patras - Edinburgh (computing) </td>
-                        <td>Fuelling Autonomous Networks with Predictive Traffic Insights</td>
-                    </tr>
-
-                    <!-- Coffee -->
-                    <tr>
-                        <td class="double">15:30-16:00</td>
-                        <td class="double">Coffee</td>
-                        <td class="double"></td>
-                    </tr>
-
-                    <!-- Session -->
-                    <tr>
-                        <th>16:00-17:00</th>
-                        <th>Session: Short Talks</th>
-                        <!--<th>Chair: Matthew Alan Le Brun</th>-->
-                    </tr>
-
-                    <tr>
-                        <td>Ryo Yanagida - Glasgow (computing) </td>
-                        <td>Supporting Autonomous Networking with Content Centric Networking</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/ryo - 2022 12 CCN in Autonomous Networking-steps.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Kyle Simpson - Glasgow (computing) </td>
-                        <td>Reinforcement Learning for SmartNICs</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/kyle-simpson.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Wim Vanderbauwhede - Glasgow (computing) </td>
-                        <td>Formal Methods App Control</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/SANS-2022-12-12-WV.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Christos Anagnostopoulos - Glasgow (computing) </td>
-                        <td>Re-usability at the Edge</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/chris - KDES_SAN_12122022.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-<!--
-                    <tr>
-                        <td class="discussion">17:00-18:00</td>
-                        <td class="discussion">Session: Discussion</td>
-                        <td class="discussion"></td>
-                    </tr>
--->
-                    <tr>
-                        <td class="discussion">18:30-20:00</td>
-                        <td class="discussion">Social Event</td>
-                        <td class="discussion">Location: https://goo.gl/maps/2qqqUYP9c7QAYLiW8</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h4> Tuesday 13<sup>th</sup> December </h4>
-
-            <table>
-                <tbody>  
-
-                    <tr>
-                        <td class="double">09:00-09:30</td>
-                        <td class="double">Welcome / Registration</td>
-                        <td class="double"></td>
-                    </tr>
-
-                    <tr class="clickable" onclick="window.location='#rakuten'">
-                        <th>09:30-11:00</th>
-                        <th>Industrial Keynote</th>
-                        <th>Speaker: Philip Rodgers - Rakuten Symphony
-                        </th>
-                    </tr>
-
-                    <tr>
-                        <td class="double">11:00-11:30</td>
-                        <td class="double">Coffee</td>
-                        <td class="double"></td>
-                    </tr>
-
-                    <!-- Session -->
-                    <tr>
-                        <th>11:30-13:00</th>
-                        <th>Session: Short Talks</th>
-                        <!--<th>Chair: Matthew Alan Le Brun</th>-->
-                    </tr>
-
-                    <tr>
-                        <td>Jeremy Singer - Glasgow (computing) </td>
-                        <td>Call me from Anywhere: Remote Procedure Calling meets Named Data Networking</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/rpc_ndn_jsinger.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Colin Perkins - Glasgow (computing) </td>
-                        <td>Should we Compute in a Named Data Network?</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/colin-2022-12-13-SICSA-AutonomousSystems.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Shuja Ansari - Glasgow (engineering) </td>
-                        <td>Connected Digital Twins – Closing the loop + Scotland 5G Center Tour</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/SANS-Ansari-DigitalTwins.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <!-- Lunch -->
-                    <tr>
-                        <td class="double">13:00-14:00</td>
-                        <td class="double">Lunch</td>
-                        <td class="double"></td>
-                    </tr>
-
-                    <!-- Session -->
-                    <tr>
-                        <th>14:00-15:30</th>
-                        <th>Session: Short Talks</th>
-                        <!--<th>Chair: Matthew Alan Le Brun</th>-->
-                    </tr>
-
-                    <tr>
-                        <td>Stephen Mcquistin - Glasgow (computing) </td>
-                        <td>Supporting Evolution, Experimentation, and Adaptation with Parseable Standards Documents</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/sans2022-parsing.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Marc Roper - Strathclyde (computing) </td>
-                        <td>Evolutionary Algorithms: Why Plan When You Can Just Try</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/marc-roper-SANS-Dec22-MR.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>                    
-
-                    <tr>
-                        <td>Damien Anderson - Strathclyde (computing) </td>
-                        <td>An Evolutionary Hierarchy for Controlling Large-Scale Distributed Systems</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/SANS Presentation - Damien Anderson.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>                    
-
-                    <tr>
-                        <td>Lito Michala - Glasgow (computing) </td>
-                        <td>Federated Learning for Autonomous IoT Systems</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/lito-ALM_invited_presentation.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Vishnu OV RAM </td>
-                        <td>Focus Group on Autonomous Networks</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/Vishnu-FGAN-SANS-v2.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Mihail Yanev - Glasgow (computing) </td>
-                        <td>FLOQ: Flow optimized queuing</td>
-                        <td>
-                            <br>
-                            <a href="./2022-dec/presentations/FLOQ_SANS.pdf"> PRESENTATION </a>
-                        </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td class="double">15:30-16:00</td>
-                        <td class="double">Coffee</td>
-                        <td class="double"></td>
-                    </tr>
-
-                    <!-- Posters -->
-                    <tr>
-                        <th>16:00-17:00</th>
-                        <th>Session: Posters & Demos</th>
-                        <!--<th>Chair: Matthew Alan Le Brun</th>-->
-                    </tr>
-
-                    <tr>
-                        <td>Kaan AYKURT - TUM </td>
-                        <td>Graph Neural Networks based network performance modeling</td>
-                    </tr>
-
-                    <tr>
-                        <td>Cocoa XU - Glasgow (computing) </td>
-                        <td>Composable and Environemtnally Aware Federated Learning Models</td>
-                    </tr>
-
-                    <tr>
-                        <td>Syed Basit Ali Zaidi  - Glasgow (engineering) </td>
-                        <td>An Efficient Deep Learning-based Spectrum Awareness Approach for Vehicular Communication</td>
-                    </tr>
-                    
-                     <tr>
-                        <td>Charles Varley  - Glasgow (computing) </td>
-                        <td>Named Data Networks, can they really get rid of IPs?</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Yuting Wan - Glasgow (computing) </td>
-                        <td>Network Autonomy Transformation for Communication Service Providers</td>
-                    </tr>
-
-                    <tr>
-                        <td>Petros Papadopoulos - Strathclyde (computing) </td>
-                        <td>Continuous Evolution of Production CDN systems</td>
-                    </tr>
-
-                    <tr>
-                        <td>Johannes Zerwas - TUM </td>
-                        <td>Kapetánios: Automated Kubernetes Adaptation through a Digital Twin</td>
-                    </tr>
-
-                    <tr>
-                        <td class="discussion">17:00-17:30</td>
-                        <td class="discussion">Closing Remarks</td>
-                        <td class="discussion"></td>
-                    </tr>
-
-                     
-                </tbody>
-            </table>
-
-            <h3>Talks</h3>
-
-            <table>
-                <tbody>
-
-                    <tr id="tum">
-                        <th>Prof Wolfgang Kellerer, Technical University of Munich</th>
-                        <th>Network Management goes 6G</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-
-
-                    <tr id="rakuten">
-                        <th>Dr Philip Rodgers, Rakuten Symphony</th>
-                        <th>TBA</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-
-                    <!--
-                    <tr id="k-framework">
-                        <th>Bruce Collie</th>
-                        <th>The K Framework: Practical Semantic Tools from Term Rewriting</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>K (<a href="https://kframework.org/">https://kframework.org/</a>) is a rewrite-based executable semantic framework in which programming languages, type systems and formal analysis tools can be defined. 
-                            From a single language definition in K, an entire suite of tools can be automatically derived (including a parser, concrete interpreter, and symbolic execution engine); it provides a flexible, powerful environment for constructing programming languages. 
-                            In this talk, I'll provide an introduction to K by demonstrating a simple imperative language semantics, along with a set of proofs over programs in this language enabled by K's generic theorem prover. 
-                            Finally, I'll talk briefly about how we use K commercially at scale in the blockchain and embedded software domains.</td>
-                    </tr>
-                    <tr id="fitch-style-modal-calculi">
-                        <th>Nachiappan Valiappan</th>
-                        <th>Normalization for Fitch-style Modal Calculi</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p>Fitch-style modal lambda calculi enable programming with necessity modalities in a typed lambda calculus by extending the typing context with a delimiting operator that is denoted by a lock. 
-                            The addition of locks simplifies the formulation of typing rules for calculi that incorporate different modal axioms, but each variant demands different, tedious and seemingly ad hoc syntactic lemmas to prove normalization. 
-                            In this work, we develop normalization by evaluation (NbE) for Fitch-style calculi that incorporate the K, T and 4 axioms of modal logic by leveraging their possible-world semantics. 
-                            The NbE approach exploits the commonalities of these calculi in the possible-world semantics and isolates their differences to a specific parameter that determines the modal fragment, thus enabling reuse of the evaluation machinery and many lemmas proved in the process. 
-                            Finally, we showcase several consequences of normalization for proving meta-theoretic properties of Fitch-style calculi based on different interpretations of the necessity modality in programming languages, such as capability safety, noninterference and a form of binding-time correctness.</p>
-                            <p>Paper and mechanization available <a href="https://nachivpn.me/k/">here</a>.</p>
-                        </td>
-                    </tr>
-                    <tr id="idris-tyre">7
-                        <th>Katarzyna Marek</th>
-                        <th>Idris-TyRE - a Dependently-Typed Regex Parser</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Regexes are widely used not only for validating, but also for parsing textual data. 
-                            Generally, regex parsers output a very generic structure, e.g. an unstructured list of matches, leaving it up to the user to validate the output's properties and transform it into the desired structure. 
-                            Since the regex itself carries information about the structure, this leads to unnecessary repetition. 
-                            In this talk we will present Idris-TyRE - a library for type-driven regex parsing. 
-                            The idea is based on Radanne’s typed regexes library of the same name - a typed, indexed combinators layer that can be added on top of an existing regex engine. 
-                            In contrast to Radanne's design, we also implement a parser, which maintains the type-safety throughout all layers. 
-                            The parser is implemented in Idris 2 utilising the following features of Idris 2's advanced type system. 
-                            We take advantage of type-level computation to establish the correct parse tree type; we use dependent-type verification to ensure the result type correctness; and we benefit from quantitative types by erasing the proofs and avoiding run-time overhead.
-                            This is joint work with Ohad Kammar.</td>
-                    </tr>
-                    <tr id="typos">
-                        <th>Conor McBride</th>
-                        <th>TypOS: An Operating System for Typechecking Actors</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <p>TypOS is an experimental language specific to the domain of implementing type checking, type synthesis and type-directed elaboration algorithms, presented as concurrent actors. We develop the idea "A rule is a server for its conclusion and a client for its premises." into a framework where the judgment forms are presented as interaction protocols and the rules for a given judgment are collectively presented as an actor serving the judgment's protocol.
-                            A running actor may spawn new actors of which it is the client, each with its own channel.
-                            The parameters to each judgement thus acquire not only a syntactic category, but also a mode as input or output.
-                            With this stromger sense of information flow, the language of formulae occurring in rules naturally splits into patterns which analyse things coming and expressions which synthesize things going. Expressions may contain substitutions to be done, but patterns may not, because substitutions are hard to undo.
-                            More generally, the TypOS design strategy is to prevent practices likely to result in failure of metatheoretical safety properties.
-                            We pay particular attention to term variable scope, for example ensuring that no actor can learn the name of a variable bound by another.
-                            TypOS also supports the speculation of unknowns, which become monotonically more defined as constraints are solved: we thus have the one kind of shared memory that makes sense in a distributed setting.
-                            Actors can thus block if they need information which is not yet available: ensuring that resuming actors operate on up-to-date information is the implementation challenge which precipitated the whole effort.</p>
-                            
-                            <p>TypOS is joint work with Guillaume Allais, Malin Altenmueller, Georgi Nakov, Fredrik Nordvall Forsberg and Craig Roy. <a href="https://github.com/msp-strath/TypOS">GitHub repository</a>.</td></p>
-                    </tr>
-                    <tr id="refactoring">
-                        <th>Chris Brown</th>
-                        <th>RePi: Towards a Refactoring Tool for Dependently Typed Programs</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <p>Dependently-typed programming languages are becoming increasingly popular in the functional programming community,
-                                allowing programmers to express properties of logic and proofs as part of their implementation. Dependent types
-                                permit the programmer to implement safe programs, by encoding safety properties as parts of the types themselves;
-                                these properties can be encoded by permitting the types to depend on values. However, programming dependently-typed
-                                systems is still very difficult for the average software developer, who may have had some prior training with
-                                functional languages, such as Haskell, but lacks the background and experience in logic and type systems to make
-                                appropriate use of the dependent types to build strong safe systems as a part of their day-to-day practice.
-                            </p>
-                            <p>
-                                Refactoring aims to provide programmers with the ability to systemically restructure their code to better
-                                reflect its purpose, making it more amenable to change and maintainability, or simply to make it more understandable.
-                                The advantage of refactoring tool support is that it not only presents the programmer with a structured set of
-                                well-defined transformations, but it also alleviates the error-prone burden of manually making modifications across
-                                an entire project that might contain thousands of source code modules. To date, however, there are no refactoring
-                                tools for dependently-typed programming languages.
-                            </p>
-                            <p>
-                                In this talk, we address this problem by discussing a number of new refactorings to be implemented for the
-                                dependently-typed programming language, Pi-Forall, developed by Weirich. We particularly focus on refactorings
-                                for extending and maintaining data types in Pi-Forall. We demonstrate our prototype refactorings over a simple
-                                lambda calculus example and discuss our preliminary refactoring tool, RePi.
-                            </p>
-                        </td>
-                    </tr>
-                -->
-                </tbody>
-            </table>
-
-            <h3>Photos!</h3>
-
-            <div id="gallery">
   
-           <img src="./2022-dec/images/image-001.jpg">
-           <img src="./2022-dec/images/image-002.jpg">
-           <img src="./2022-dec/images/image-003.jpg">
-           <img src="./2022-dec/images/image-004.jpg">
-           <img src="./2022-dec/images/image-005.jpg">
-           <img src="./2022-dec/images/image-006.jpg">
-           <img src="./2022-dec/images/image-007.jpg">
-           <img src="./2022-dec/images/image-008.jpg">
-           <img src="./2022-dec/images/image-009.jpg">
-           <img src="./2022-dec/images/image-010.jpg">
-           <img src="./2022-dec/images/image-026.jpg">
-           <img src="./2022-dec/images/image-012.jpg">
-           <img src="./2022-dec/images/image-013.jpg">
-           <img src="./2022-dec/images/image-014.jpg">
-           <img src="./2022-dec/images/image-015.jpg">
-           <img src="./2022-dec/images/image-016.jpg">
-           <img src="./2022-dec/images/image-017.jpg">
-           <img src="./2022-dec/images/image-018.jpg">
-           <img src="./2022-dec/images/image-019.jpg">
-           <img src="./2022-dec/images/image-020.jpg">
-           <img src="./2022-dec/images/image-021.jpg">
-           <img src="./2022-dec/images/image-022.jpg">
-           <img src="./2022-dec/images/image-023.jpg">
-           <img src="./2022-dec/images/image-024.jpg">
-           <img src="./2022-dec/images/image-025.jpg">
-           <img src="./2022-dec/images/image-027.jpg">
-           <img src="./2022-dec/images/image-028.jpg">
-           
 
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://scot-ans.github.io/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.96d0f9f87c71e9837523462c6cebc18c.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.337dc0483cc0b26b80d62107bbcdfa40.css">
+  
+
+  
+  
+  
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8W4QV8RLM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W8W4QV8RLM');
+    </script>
+
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'G-W8W4QV8RLM', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="SANS 2024">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="SANS 2024">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://scot-ans.github.io/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="SANS 2024">
+  <meta property="og:url" content="https://scot-ans.github.io/">
+  <meta property="og:title" content="SANS 2024">
+  <meta property="og:description" content=""><meta property="og:image" content="https://scot-ans.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://scot-ans.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+  
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>SANS 2024</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">SANS 2024</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/" data-target="[]"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
           
-          </div>
+        
 
-        </section>
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
 
-        <section id="organisers" class="container">
-            <h2>Organisers</h2>
+        <li class="nav-item">
+          <a class="nav-link " href="/#dates" data-target="#dates"><span>Dates</span></a>
+        </li>
 
-            <p>
-                The organisers of this edition of SANS are 
-                <a href="mailto:paul.harvey@glasgow.ac.uk">Paul Harvey</a>, 
-                <a href="mailto:jeremy.singer@glasgow.ac.uk">Jeremy Singer</a>, 
-                <a href="mailto:colin.perkins@glasgow.ac.uk">Colin Perkins</a>, 
-                <a href="mailto:marc.roper@strath.ac.uk">Marc Roper</a>, 
-                <a href="mailto:bv6@st-andrews.ac.uk">Blesson Varghese</a>,
-                and <a href="mailto:philip.rodgers@rakuten.com">Philip Rodgers</a>.
+        
+        
 
-                Feel free to contact any of the organisers about queries regarding this seminar.
-            </p>
-        </section>
-    </body>
+        
 
-    <style>
-        body {
-            display: block;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            position: relative;
-            width: 100%;
-            text-align: justify;
-        }
+        
+        
+        
+          
+        
 
-        section {
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-        }
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
 
-        a {
-            color: #006630;
-            text-decoration: underline;
-        }
+        <li class="nav-item">
+          <a class="nav-link " href="/#topics" data-target="#topics"><span>Topics</span></a>
+        </li>
 
-        .padding-top {
-            padding-top: 2rem;
-        }
+        
+        
 
-        td.double {
-            border-top: 0.3rem double #e1e1e1;
-            border-bottom: 0.3rem double #e1e1e1;
-        }
+        
 
-        td.discussion {
-            border-top: 0.3rem double #e1e1e1;
-            border-bottom: 0.3rem double #e1e1e1;
-            font-weight: bold;
-        }
+        
+        
+        
+          
+        
 
-        table {
-            text-align: justify;
-        }
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
 
-        .clickable {
-            cursor: pointer;
-        }
+        <li class="nav-item">
+          <a class="nav-link " href="/#program" data-target="#program"><span>Program</span></a>
+        </li>
 
-        .no-bottom-border td{
-            border-bottom-width: 0rem;
-        }
+        
+        
 
-        #gallery {
-           line-height:0;
-           -webkit-column-count:5; /* split it into 5 columns */
-           -webkit-column-gap:5px; /* give it a 5px gap between columns */
-           -moz-column-count:5;
-           -moz-column-gap:5px;
-           column-count:5;
-           column-gap:5px;
-        }
+        
 
-        #gallery img {
-           width: 100% !important;
-           height: auto !important;
-           margin-bottom:5px; /* to match column gap */
-        }
+        
+        
+        
+          
+        
 
-        @media (max-width: 1200px) {
-           #gallery {
-            -moz-column-count:    4;
-            -webkit-column-count: 4;
-            column-count:         4;
-           }
-        }
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
 
-        @media (max-width: 1000px) {
-           #gallery {
-            -moz-column-count:    3;
-            -webkit-column-count: 3;
-            column-count:         3;
-           }
-        }
+        <li class="nav-item">
+          <a class="nav-link " href="/#previous" data-target="#previous"><span>Previous Editions</span></a>
+        </li>
 
-        @media (max-width: 800px) {
-           #gallery {
-            -moz-column-count:    2;
-            -webkit-column-count: 2;
-            column-count:         2;
-           }
-        }
+        
+        
 
-        @media (max-width: 400px) {
-           #gallery {
-            -moz-column-count:    1;
-            -webkit-column-count: 1;
-            column-count:         1;
-           }
-        }
-    </style>
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  
+
+
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="hero" class="home-section wg-hero   " style="background-image: linear-gradient(#ffffff, #dbdbdb);" >
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-md-6 order-md-1 text-center text-md-left align-self-center">
+
+
+    
+    <div><h2 id="scottish-autonomous-networked-systesm---part-ii-sans-2024">Scottish Autonomous Networked Systesm - Part II (SANS 2024)</h2>
+<p>2-3rd May 2024</p>
+<p><a href="#location">Advanced Research Center, University of Glasgow, UK</a></p>
+</div>
+    
+
+    
+    
+
+  
+  
+  </div>
+  <div class="col-10 mx-auto col-md-6 order-md-2 hero-media">
+    <img class="hero-img img-fluid" src="/img/sans-no-back.png" alt="">
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="about" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>About</h1>
+      
+    </div>
+    <div class="col-12">
+      <p>The Scottish Autonomous Networked Systems (SANS) event brings together researchers from different areas to share ideas and learn about ongoing work in relation to <strong><em>autonomous networked systems</em></strong>.</p>
+<p>If you would like to particiapte or share your work relating to autonomous networked systems, go <a href="#registration"><strong>here</strong></a>.</p>
+<p>This version of SANS is sponsored by <a href="https://www.sicsa.ac.uk/">SICSA</a>.</p>
+<p><img src="img/sicsa_blue.jpg" alt="SICSA Logo" title="a title"></p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="dates" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Important Dates</h1>
+      
+    </div>
+    <div class="col-12">
+      <p>Thursday 2nd May and Friday 3rd May 2024</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="topics" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Topics</h1>
+      
+    </div>
+    <div class="col-12">
+      <p>The Scottish Autonomous Networked Systems (SANS) event is an opportunity to bring together researchers from different areas to share ideas and learn about ongoing work in relation to autonomous networked systems.</p>
+<p>If you would like to share your work relating to autonomous networked systems, we are looking for short form presentations. The goal is information sharing and communitiy awareness!</p>
+<p>Topic of relevance can include:</p>
+<ul>
+<li>Applying novel AI &amp; ML techniques in an innovative manner to create evolvable and autonomous compute and network infrastructure.</li>
+<li>Repurposing robotic operation techniques to distributed and federated software control to achieve runtime operational assurance.</li>
+<li>Investigating new programming interactions between user, system, and network to achieve trust for autonomous operation.</li>
+<li>The use of formal methods to help achieve trustworthy operation in the face of dynamic and adaptable operational environments.</li>
+<li>Or more&hellip;.</li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="program" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Program</h1>
+      
+    </div>
+    <div class="col-12">
+      <p>If you want to participate in SANS 2024, please register here!</p>
+<p>(more info about the venue <a href="#location">here</a>)</p>
+<!---
+**Room**: B2-1 (more info about the venue [here](https://noms2024.ieee-noms.org/hotel-travel))
+--->
+<h2 id="schedule">Schedule</h2>
+<h3 id="day-1-thursday-2nd-may-2024">Day 1: Thursday 2nd May 2024</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Time</th>
+<th style="text-align:center">Title</th>
+<th style="text-align:left">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">09.30-10.00</td>
+<td style="text-align:center">Registration</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10.00-10.15</td>
+<td style="text-align:center">Welcome</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10.15-11.00</td>
+<td style="text-align:center">Keynote Academic + Q&amp;A</td>
+<td style="text-align:left">TBA</td>
+</tr>
+<tr>
+<td style="text-align:center">11.00-11.30</td>
+<td style="text-align:center">Coffee Break</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">11.30-12.30</td>
+<td style="text-align:center">Session 1</td>
+<td style="text-align:left">Short Talks</td>
+</tr>
+<tr>
+<td style="text-align:center">12.30-14.00</td>
+<td style="text-align:center">Lunch</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">14.30-15.30</td>
+<td style="text-align:center">Session 2</td>
+<td style="text-align:left">Short Talks</td>
+</tr>
+<tr>
+<td style="text-align:center">15.30-16.00</td>
+<td style="text-align:center">Coffee Break</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">16.00-17.00</td>
+<td style="text-align:center">Session 3</td>
+<td style="text-align:left">Poster Session</td>
+</tr>
+<tr>
+<td style="text-align:center">17.00-18.30</td>
+<td style="text-align:center">Free Time</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">18.30-20.00</td>
+<td style="text-align:center">Social Event!</td>
+<td style="text-align:left">TBA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="day-2-friday-3rd-may-2024">Day 2: Friday 3rd May 2024</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Time</th>
+<th style="text-align:center">Title</th>
+<th style="text-align:left">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">09.30-10.00</td>
+<td style="text-align:center">Registration</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10.00-10.15</td>
+<td style="text-align:center">Welcome</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">10.15-11.00</td>
+<td style="text-align:center">Keynote Industrial + Q&amp;A</td>
+<td style="text-align:left">TBA</td>
+</tr>
+<tr>
+<td style="text-align:center">11.00-11.30</td>
+<td style="text-align:center">Coffee Break</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">11.30-12.30</td>
+<td style="text-align:center">Session 1</td>
+<td style="text-align:left">Short Talks</td>
+</tr>
+<tr>
+<td style="text-align:center">12.30-14.00</td>
+<td style="text-align:center">Lunch</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">14.30-15.30</td>
+<td style="text-align:center">Session 2</td>
+<td style="text-align:left">Pannel Discussion</td>
+</tr>
+<tr>
+<td style="text-align:center">15.30-16.00</td>
+<td style="text-align:center">Coffee Break</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">16.00-17.00</td>
+<td style="text-align:center">Session 3</td>
+<td style="text-align:left">Short Talks</td>
+</tr>
+<tr>
+<td style="text-align:center">17.00-18.30</td>
+<td style="text-align:center">Free Time</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">18.30-20.00</td>
+<td style="text-align:center">Social Event!</td>
+<td style="text-align:left">TBA</td>
+</tr>
+</tbody>
+</table>
+<!---
+|||
+|----|---|
+|15.30-15.35|Opening|
+|15.35-16.30| **Keynote**: [Sherif Abdelwahed](https://scholar.google.com/citations?user=ZUfEfSAAAAAJ&hl=en), "A Journey into Integrating Machine Learning and Model-Based Techniques for CPS Autonomy"
+|16.35-17.00|Sharmin Jahan, Sarra Alqahtani, Rose Gamble and Masrufa Bayesh. *Automated Extraction of Security Profile Information from XAI Outcomes* |
+|17.00-17.25|Glaucia Melo, Nathalia Nascimento, Paulo Alencar and Donald Cowan. *Variability-Aware Architecture for Human-Chatbot Interactions: Taming Levels of Automation* |
+|17.25-17.50|Anthony Baietto, Christopher Stewart and Trevor J. Bihl. *Dataset Augmentation for Robust Spiking Neural Networks* |
+|17.50-18.00|Closing|
+--->
+<h2 id="keynotes">Keynotes</h2>
+<h3 id="industrial">Industrial</h3>
+<p>TBD</p>
+<h3 id="academic">Academic</h3>
+<p>TBD</p>
+<h3 id="speakers--particiants">Speakers &amp; Particiants</h3>
+<p><strong>TBD</strong></p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="registration" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Registration &amp; Participation</h1>
+      
+    </div>
+    <div class="col-12">
+      <h2 id="speakers">Speakers</h2>
+<p>We are looking for speaker and presentations for SANS 2024. If you are interested please get in touch <a href="mailto:paul.harvey@glasgow.ac.uk">paul.harvey@glasgow.ac.uk</a>.</p>
+<h2 id="registration">Registration</h2>
+<p>To as to arrange catering, please register for SANS 2024 <a href="">here</a></p>
+<h2 id="cost">Cost</h2>
+<p>Participation at SANS is <strong>FREE</strong> 😀.</p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="location" class="home-section wg-contact   "  >
+    <div class="container">
+      
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 text-center section-heading">
+    <h1>Location</h1>
+    
+  </div>
+  <div class="col-12">
+    <p><p>Room <strong>TBD</strong></p>
+<p>The Mazumdar-Shaw Advanced Research Centre,
+11 Chapel Lane,
+University of Glasgow,
+G11 6EW</p>
+<p>(more info about the venue <a href="https://www.gla.ac.uk/research/arc/">here</a>)</p>
+<p>Find on <a href="https://goo.gl/maps/DbjyvBYBZwK4e5JG7">Google Maps</a></p>
+</p>
+  </div>
+  <div class="col-md-6">
+    
+
+  </div>
+  <div class="col-md-6">
+    <ul class="fa-ul" itemscope>
+      
+
+      
+
+      
+
+      
+
+      
+
+    </ul>
+  </div>
+  <div class="col-12">
+    
+    <div class="d-none">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="55.87171">
+      <input id="map-lng" value="-4.29600">
+      <input id="map-dir" value="">
+      <input id="map-zoom" value="16">
+      <input id="map-api-key" value="AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ">
+    </div>
+    <div id="map"></div>
+    
+  </div>
+</div>
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="previous" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Previous Editions</h1>
+      
+    </div>
+    <div class="col-12">
+      <ul>
+<li>SANS 2022 can be found <a href="https://scot-anms.github.io/2022/">here</a>.</li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="committees" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 section-heading text-center">
+      <h1>Organizers</h1>
+      
+    </div>
+    <div class="col-12">
+      <div class="row">
+  <div class="col-lg-4 col-md-4 mb-4">
+    <div class="card experience course shadow-sm rounded-0 border-0">
+      <div class="card-body">
+        <a href="http://www.paul-harvey.org" target="_blank" rel="noopener">
+          <h4 class="card-title exp-title text-muted my-0">Paul Harvey</h4>
+        </a>
+        <div class="card-subtitle my-0 article-metadata">
+            University of Glasgow, UK
+<!--<img src="/img/uog_logo.png" alt="University of Glasgow logo">-->
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 mb-4">
+    <div class="card experience course shadow-sm rounded-0 border-0">
+      <div class="card-body">
+        <a href="https://csperkins.org/" target="_blank" rel="noopener">
+          <h4 class="card-title exp-title text-muted my-0">Colin Perkins</h4>
+        </a>
+        <div class="card-subtitle my-0 article-metadata">
+            University of Glasgow, UK
+<!--<img src="/img/uog_logo.png" alt="University of Glasgow logo">-->
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 mb-4">
+    <div class="card experience course shadow-sm rounded-0 border-0">
+      <div class="card-body">
+        <a href="https://www.dcs.gla.ac.uk/~jsinger/" target="_blank" rel="noopener">
+          <h4 class="card-title exp-title text-muted my-0">Jeremy Singer</h4>
+        </a>
+        <div class="card-subtitle my-0 article-metadata">
+            University of Glasgow, UK
+<!--<img src="/img/uog_logo.png" alt="University of Glasgow logo">-->
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 mb-4">
+    <div class="card experience course shadow-sm rounded-0 border-0">
+      <div class="card-body">
+        <a href="https://www.strath.ac.uk/staff/ropermarcdr/" target="_blank" rel="noopener">
+          <h4 class="card-title exp-title text-muted my-0">Marc Roper</h4>
+          </a>
+          <div class="card-subtitle my-0 article-metadata">
+            University of Strathclyde, UK
+  <!--<img src="/img/imec_logo.png" alt="imec logo">-->
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 mb-4">
+    <div class="card experience course shadow-sm rounded-0 border-0">
+      <div class="card-body">
+          <a href="https://smcquistin.uk/" target="_blank" rel="noopener">
+          <h4 class="card-title exp-title text-muted my-0">Stephen McQuistin</h4>
+        </a>
+        <div class="card-subtitle my-0 article-metadata">
+            University of St Andrew's, UK
+<!--<img src="/img/nokia_logo.png" alt="nokia logo">-->
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 mb-4">
+    <div class="card experience course shadow-sm rounded-0 border-0">
+      <div class="card-body">
+          <a href="https://www.stir.ac.uk/people/256694" target="_blank" rel="noopener">
+          <h4 class="card-title exp-title text-muted my-0">Sandy Brownlee</h4>
+        </a>
+        <div class="card-subtitle my-0 article-metadata">
+            University of Stirling, UK
+<!--<img src="/img/nokia_logo.png" alt="nokia logo">-->
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+
+      
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.5328943609f83580d0f13f6d5b5f2587.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        
+        <p class="mb-0">
+          Copyright © 2023 &middot; 
+          Powered by
+          <a href="https://gethugothemes.com" target="_blank" rel="noopener">Gethugothemes</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right mb-0">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
